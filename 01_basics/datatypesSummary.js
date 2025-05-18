@@ -1,5 +1,7 @@
 //  Primitive
 
+const { gameName } = require("./01_strings");
+
 //  7 types : String, Number, Boolearn, null, undefined, Symbol, BigInt
 
 const score = 100
@@ -57,3 +59,25 @@ there r 2 types of datatypes
        Function  =>  function
        Object  =>  object
       to run the code write: node 01_basics/datatypesSummary.js*/
+     // -----------------------------------------------
+     
+     //*Memory Alloctaion In javascript*
+
+     //Stack->(primitive datatypes) & Heap(for  Non primitive)
+     // e.g for Stack(stack memeory me jo lenge unka sirf copy milta)
+     let na="ayaz"
+     let n=na
+     n="chai"
+     console.log(na)
+     console.log(n) //na is still ayaz
+
+     //e.g heap(heap me lene se reference milta i.e change karne se change hojata)
+     let user1={
+        email:"ayaz.com",
+        upi:"absdf.gh"
+     }
+     let user2=user1
+     user2.email="new email"
+     console.log(user1.email)
+     console.log(user2.email);
+     
