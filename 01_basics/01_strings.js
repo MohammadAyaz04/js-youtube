@@ -4,8 +4,7 @@ const repoCount = 50
 // console.log(name + repoCount + " Value"); this way is not followed to print
 
 console.log(`Hello my name is ${name} and my repo count is ${repoCount}`); //best way to print
-
-export const gameName = new String('hitesh-hc-com') //also a way to declare string
+ const gameName = new String('hitesh-hc-com') //also a way to declare string
 
 // console.log(gameName[0]);
 // console.log(gameName.__proto__);
