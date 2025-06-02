@@ -1,0 +1,1 @@
+done till 29th video do notes here paste
