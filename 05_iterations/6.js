@@ -1,18 +1,22 @@
-// const coding = ["js", "ruby", "java", "python", "cpp"]
+ const coding = ["js", "ruby", "java", "python", "cpp"]
 
+//for each doesnt return any value
+ const values = coding.forEach( (item) => {
+    console.log(item);
+     return item //no use of this statment
+ } )
 
-// const values = coding.forEach( (item) => {
-//     //console.log(item);
-//     return item
-// } )
-
-// console.log(values);
+ console.log(values); //undefined is the output
 
 const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-// const newNums = myNums.filter( (num) => {
-//     return num > 4
-// } )
+const newNums = myNums.filter( (num) => { 
+    //filter is like for each but it returns values
+    return num > 4 //use return when using {} with arrow func
+ } )
+ console.log(newNums)
+
+ //SAME thing with foreach
 
 // const newNums = []
 
@@ -38,8 +42,9 @@ const books = [
   ];
 
   let userBooks = books.filter( (bk) => bk.genre === 'History')
+ // console.log(userBooks); //gives book 3 and 7
 
-  userBooks = books.filter( (bk) => { 
-    return bk.publish >= 1995 && bk.genre === "History"
+  userBooks = books.filter( (bk) => {  //here we use scope {} so return is used
+    return bk.publish >= 1995 && bk.genre === "History" //2 condition checked
 })
-  console.log(userBooks);
+  console.log(userBooks); //gives book3
